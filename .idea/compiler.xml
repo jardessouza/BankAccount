@@ -19,13 +19,15 @@
         </processorPath>
         <module name="account-service" />
         <module name="transaction-service" />
+        <module name="discovery-service" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="account-service" options="-parameters" />
-      <module name="bankaccount-microservices" options="" />
+      <module name="bankaccount-microservices" options="-parameters" />
+      <module name="discovery-service" options="-parameters" />
       <module name="transaction-service" options="-parameters" />
     </option>
   </component>
